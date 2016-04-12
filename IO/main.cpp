@@ -61,5 +61,17 @@ int main(int argc, char *argv[])
     str1 = out1.readLine();
     qDebug()<<str1<<endl;
     file01.close();
+
+    QString filename1="file.txt";
+    QFile file2;
+    file2.remove(filename1);
+    QString filename2 = "1.txt";
+    int index = filename2.lastIndexOf(".");
+    filename2.truncate(index);
+    qDebug()<<filename2;
+    QString fileName3 = "1";
+    fileName3.prepend("/home/zhaojianjun/");
+    fileName3.append(".txt");
+    qDebug()<<fileName3;
     return a.exec();
 }
