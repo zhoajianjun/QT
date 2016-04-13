@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FriendsList</class>
+ <widget class="QWidget" name="FriendsList">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QTabWidget" name="FriendList_tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>160</y>
+     <width>280</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::DefaultContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTabWidget::pane { /* The tab widget frame */
+    border-top: none;
+	background-color: rgb(255, 255, 255);
+}
+
+QTabWidget::tab-bar {
+    left: 0px; /* move to the right by 5px */
+	
+}
+
+/* Style the tab using the tab sub-control. Note that
+    it reads QTabBar _not_ QTabWidget */
+QTabBar::tab {
+
+ 	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #EDEDED, stop: 0.4 #D0D0D0,
+                                stop: 0.5 #C8C8C8, stop: 1.0 #C3C3C3);
+text-align:center;
+	width:93px;
+	height:30px;
+   border: none;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    min-width: 8ex;
+    padding: 0px;
+}
+
+QTabBar::tab:hover {
+	 	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #DDDDDD, stop: 0.4 #DDDDDD,
+                                stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+    
+}
+
+QTabBar::tab:selected {
+	background-color: rgb(255, 255, 255);
+   
+}
+
+QTabBar::tab:!selected {
+    margin-top: 0px; /* make non-selected tabs look smaller */
+}
+
+                            </string>
+   </property>
+   <property name="tabPosition">
+    <enum>QTabWidget::North</enum>
+   </property>
+   <property name="tabShape">
+    <enum>QTabWidget::Rounded</enum>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>50</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="elideMode">
+    <enum>Qt::ElideNone</enum>
+   </property>
+   <property name="documentMode">
+    <bool>false</bool>
+   </property>
+   <property name="tabsClosable">
+    <bool>false</bool>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <widget class="QWidget" name="Near_tab">
+    <attribute name="icon">
+     <iconset resource="images.qrc">
+      <normaloff>:/images/images/recentList_unselect.svg</normaloff>
+      <normalon>:/images/images/recentList_select.svg</normalon>:/images/images/recentList_unselect.svg</iconset>
+    </attribute>
+    <attribute name="title">
+     <string>最近</string>
+    </attribute>
+    <widget class="QTreeView" name="treeView">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>280</width>
+       <height>391</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTreeView {
+    show-decoration-selected: 1;
+	border:none;
+}
+
+QTreeView::item {
+     border: 1px solid #d9d9d9;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}
+
+QTreeView::item:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #e7effd, stop: 1 #cbdaf1);
+    border: 1px solid #bfcde4;
+}
+
+QTreeView::item:selected {
+    border: 1px solid #567dbc;
+}
+
+QTreeView::item:selected:active{
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #6ea1f1, stop: 1 #567dbc);
+}
+
+QTreeView::item:selected:!active {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #6b9be8, stop: 1 #577fbf);
+}</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Friends_tab">
+    <attribute name="icon">
+     <iconset resource="images.qrc">
+      <normaloff>:/images/images/friendList_unselect.svg</normaloff>
+      <normalon>:/images/images/friendList_select.svg</normalon>:/images/images/friendList_unselect.svg</iconset>
+    </attribute>
+    <attribute name="title">
+     <string>好友</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="Groups_tab">
+    <attribute name="icon">
+     <iconset resource="images.qrc">
+      <normaloff>:/images/images/groupList_unselect.svg</normaloff>
+      <normalon>:/images/images/groupList_select.svg</normalon>:/images/images/groupList_unselect.svg</iconset>
+    </attribute>
+    <attribute name="title">
+     <string>群组</string>
+    </attribute>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="UserAvatar_label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>100</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/images/avatar.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="UserPS_label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>120</y>
+     <width>271</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>610</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>images/find.png</normaloff>images/find.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>610</y>
+     <width>161</width>
+     <height>27</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Close_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>10</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+			border-image: url(:/images/images/button-quit.svg);
+   			border:none;
+}
+QPushButton:hover{border:none;border-image: url(:/images/images/button-quit.svg);}
+QPushButton:pressed{border:none;border-image: url(:/images/images/button-quit.svg);}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/images/button-quit.svg</normaloff>:/images/images/button-quit.svg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>25</width>
+     <height>25</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="UserName_label">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>40</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

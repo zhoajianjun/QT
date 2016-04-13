@@ -1,0 +1,65 @@
+﻿生成启动时间为 2013/10/14 13:13:23。
+     1>项目“E:\Program Code\Visual Studio\Projects\360safe\360safe.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“Debug\360safe.unsuccessfulbuild”执行 Touch 任务。
+       CustomBuild:
+         所有输出均为最新。
+       ClCompile:
+         所有输出均为最新。
+         所有输出均为最新。
+       Link:
+         d:\Software\Microsoft Visual Studio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Program Code\Visual Studio\Projects\360safe\Win32\Debug\\360safe.exe" /NOLOGO /LIBPATH:D:\Software\Qt\Qt5.1.0\5.1.0\msvc2010\lib qtmaind.lib Qt5Cored.lib Qt5Guid.lib Qt5Networkd.lib Qt5Widgetsd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\360safe.exe.intermediate.manifest" /MANIFESTUAC:"level='requireAdministrator' uiAccess='false'" /DEBUG /PDB:"E:\Program Code\Visual Studio\Projects\360safe\Win32\Debug\360safe.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Program Code\Visual Studio\Projects\360safe\Win32\Debug\360safe.lib" /MACHINE:X86 Debug\about_us.obj
+         Debug\account_item.obj
+         Debug\change_skin_widget.obj
+         Debug\character_widget.obj
+         Debug\clabel.obj
+         Debug\content_widget.obj
+         Debug\drop_shadow_widget.obj
+         Debug\moc_about_us.obj
+         Debug\moc_account_item.obj
+         Debug\moc_change_skin_widget.obj
+         Debug\moc_character_widget.obj
+         Debug\moc_clabel.obj
+         Debug\moc_content_widget.obj
+         Debug\moc_drop_shadow_widget.obj
+         Debug\moc_kill_mummy_widget.obj
+         Debug\moc_loading_widget.obj
+         Debug\moc_login_dialog.obj
+         Debug\moc_main_menu.obj
+         Debug\moc_main_widget.obj
+         Debug\moc_msg_box.obj
+         Debug\moc_push_button.obj
+         Debug\moc_register_widget.obj
+         Debug\moc_setting_dialog.obj
+         Debug\moc_shadow_widget.obj
+         Debug\moc_skin_widget.obj
+         Debug\moc_system_tray.obj
+         Debug\moc_title_widget.obj
+         Debug\qrc_360safe.obj
+         Debug\kill_mummy_widget.obj
+         Debug\loading_widget.obj
+         Debug\login_dialog.obj
+         Debug\main.obj
+         Debug\main_menu.obj
+         Debug\main_widget.obj
+         Debug\msg_box.obj
+         Debug\push_button.obj
+         Debug\register_widget.obj
+         Debug\setting_dialog.obj
+         Debug\shadow_widget.obj
+         Debug\skin_widget.obj
+         Debug\system_tray.obj
+         Debug\title_widget.obj
+         Debug\tool_button.obj
+         Debug\util.obj
+         360safe.vcxproj -> E:\Program Code\Visual Studio\Projects\360safe\Win32\Debug\360safe.exe
+       Manifest:
+         c:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"E:\Program Code\Visual Studio\Projects\360safe\Win32\Debug\\360safe.exe;#1" /manifest Debug\360safe.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Debug\360safe.unsuccessfulbuild”。
+         正在对“Debug\360safe.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“E:\Program Code\Visual Studio\Projects\360safe\360safe.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.26
