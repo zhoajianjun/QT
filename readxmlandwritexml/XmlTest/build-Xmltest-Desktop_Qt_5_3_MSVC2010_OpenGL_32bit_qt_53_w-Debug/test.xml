@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <Folder Path="C:/Users/Administrator/Desktop/XmlTest/Xmltest">
+        <File Name="Xmltest.pro.user.16"/>
+        <File Name="Xmltest.cpp"/>
+        <File Name="main.cpp"/>
+        <File Name="Xmltest.h"/>
+        <File Name="Xmltest.pro"/>
+        <File Name="Xmltest.pro.user"/>
+    </Folder>
+    <Folder Path="C:/Users/Administrator/Desktop/XmlTest/build-Xmltest-Desktop_Qt_5_3_MSVC2010_OpenGL_32bit_qt_53_w-Debug">
+        <File Name="Makefile"/>
+        <Folder Path="C:/Users/Administrator/Desktop/XmlTest/build-Xmltest-Desktop_Qt_5_3_MSVC2010_OpenGL_32bit_qt_53_w-Debug/debug">
+            <File Name="moc_Xmltest.cpp"/>
+            <File Name="Xmltest.exe"/>
+            <File Name="Xmltest.ilk"/>
+            <File Name="Xmltest.exe.embed.manifest"/>
+            <File Name="Xmltest.obj"/>
+            <File Name="main.obj"/>
+            <File Name="moc_Xmltest.obj"/>
+            <File Name="xmltest.pdb"/>
+            <File Name="Xmltest.exe_manifest.rc"/>
+            <File Name="Xmltest.exe_manifest.res"/>
+        </Folder>
+        <Folder Path="C:/Users/Administrator/Desktop/XmlTest/build-Xmltest-Desktop_Qt_5_3_MSVC2010_OpenGL_32bit_qt_53_w-Debug/release"/>
+        <File Name="Makefile.Debug"/>
+        <File Name="Makefile.Release"/>
+        <File Name="test.xml"/>
+    </Folder>
+</root>
