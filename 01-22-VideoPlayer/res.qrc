@@ -1,0 +1,29 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/volumeHovered.png</file>
+        <file>image/volume.png</file>
+        <file>image/stopHovered.png</file>
+        <file>image/stop.png</file>
+        <file>image/sequential.png</file>
+        <file>image/random.png</file>
+        <file>image/playHovered.png</file>
+        <file>image/play.png</file>
+        <file>image/pauseHovered.png</file>
+        <file>image/pause.png</file>
+        <file>image/minimizeHovered.png</file>
+        <file>image/minimize.png</file>
+        <file>image/maximizeHovered.png</file>
+        <file>image/maximize.png</file>
+        <file>image/listLoop.png</file>
+        <file>image/itemOnce.png</file>
+        <file>image/itemLoop.png</file>
+        <file>image/forwardHovered.png</file>
+        <file>image/forward.png</file>
+        <file>image/closeHovered.png</file>
+        <file>image/close.png</file>
+        <file>image/backwardHovered.png</file>
+        <file>image/backward.png</file>
+        <file>image/appIcon.png</file>
+        <file>image/appIcon.jpg</file>
+    </qresource>
+</RCC>
