@@ -5,6 +5,8 @@ MultiComboBox::MultiComboBox(QWidget *parent)
     : QWidget(parent)
 {
     m_com = new QComboBox(this);
+    m_com->setGeometry(0,0,200,30);
+    init();
 }
 
 MultiComboBox::~MultiComboBox()
@@ -36,10 +38,41 @@ void MultiComboBox::init()
 
 void MultiComboBox::stateChanged(int state)
 {
+    bSelected = true;
+    QString strSelectedData("");
+    QObject *object = QObject::sender();
+    strSelectedText.clear();
+    QCheckBox *pSenderCheckBox = static_cast<QCheckBox*>(object);
+    int nCount = m_list->count();
+    for (int i = 0;i < nCount;++i) {
+        QListWidgetItem *pItem = m_list->item(i);
+        QWidget *pwidget = m_list->itemWidget(pItem);
+        QCheckBox *pCheckBox = (QCheckBox*)pwidget;
+        if (pCheckBox->isChecked()) {
+            QString strText = pCheckBox->text();
+            strSelectedData.append(strText).append(";");
+        }
+        if (pSenderCheckBox == pCheckBox) {
+            int nData = pItem->data(Qt::UserRole).toInt();
+        }
+        if (strSelectedData.endsWith(";")) {
+            strSelectedData.remove(strSelectedData.count() - 1,1);
+        }
+        if (!strSelectedData.isEmpty()) {
+            strSelectedText = strSelectedData;
+            m_line->setText(strSelectedData);
+            m_line->setToolTip(strSelectedData);
 
+        } else {
+            m_line->clear();
+        }
+    }
+    bSelected = false;
 }
 
 void MultiComboBox::textChanged(const QString &text)
 {
-
+    if (!bSelected) {
+        m_line->setText(strSelectedText);
+    }
 }

@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Icon=/usr/bqvision/MeetingPanel/MeetingPanel.png
+Name=MeetingPanel
+Name[zh_CN]=指挥调度系统
+Exec=/usr/bqvision/MeetingPanel/MeetingPanel.sh

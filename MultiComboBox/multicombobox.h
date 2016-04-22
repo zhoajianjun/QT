@@ -21,6 +21,8 @@ private:
     QComboBox *m_com;
     QListWidget *m_list;
     QLineEdit *m_line;
+    bool bSelected;
+    QString strSelectedText;
 };
 
 #endif // MULTICOMBOBOX_H
