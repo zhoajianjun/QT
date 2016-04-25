@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>MainForm.ui.qml</file>
+        <file>LoginDialog.qml</file>
+        <file>LoginUI.qml</file>
+        <file>LoginUIForm.ui.qml</file>
+        <file>mc_pro.bmp</file>
+        <file>SelectGridView.qml</file>
+    </qresource>
+</RCC>
